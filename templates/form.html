@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Submission</title>
+</head>
+<body>
+    <h1>Submit Your Information</h1>
+    <form method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" maxlength="100" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" maxlength="100" required><br><br>
+
+        <!-- Age Field -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" required><br><br>
+
+        <!-- Gender Field (Text Box) -->
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" name="gender" maxlength="10" required><br><br>
+
+        <!-- Mobile Number Field -->
+        <label for="mobile_number">Mobile Number:</label>
+        <input type="tel" id="mobile_number" name="mobile_number" maxlength="10" required><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

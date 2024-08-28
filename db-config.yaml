@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-config
+data:
+  host: flask.cxayw68ko3pr.us-east-1.rds.amazonaws.com
+  database: flask

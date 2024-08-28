@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request, redirect, url_for
 import mysql.connector
 
@@ -5,10 +6,10 @@ app = Flask(__name__)
 
 def get_db_connection():
     connection = mysql.connector.connect(
-        host='flask.cxayw68ko3pr.us-east-1.rds.amazonaws.com',
-        user='admin',
-        password='rajeshcentos',
-        database='flask'
+        host=os.getenv('DB_HOST'),
+        user=os.getenv('DB_USER'),
+        password=os.getenv('DB_PASSWORD'),
+        database=os.getenv('DB_NAME')
     )
     return connection
 
